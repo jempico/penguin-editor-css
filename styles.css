@@ -1,0 +1,188 @@
+:root {
+    background-color: #C6FAF1;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+
+/*Penguin div's position is set to relative, in order to move the different parts of the penguin's body relatively to the penguin div*/
+.penguin {
+    --border-line: solid;
+    --skin-color: grey;
+    --belly-color: white;
+    --beak-color: orange;
+    --blush-color: pink;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    /*display: block;*/
+}
+
+
+.penguin-top {
+    top: 15%;
+    left: 28%;
+    right: 28%;
+    /*width: 156px;*/
+    height: 128px;
+    background-color: var(--skin-color);
+    border-radius: 70% 70% 60% 60%;
+
+}
+
+.penguin-bottom {
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    /*width: 165px;*/
+    height: 128px;   
+    background-color: var(--skin-color);
+    border-radius: 70% 70% 100% 100%;
+
+}
+
+.left-hand  {
+    top: 47%;
+    left: 19%;
+    width: 50px;
+    height: 60px;
+    transform: rotate(45deg);
+    background-color: var(--skin-color);
+    border-radius: 30% 30% 80% 30%;
+}
+
+
+.right-hand{
+    top: 47%;
+    right: 19%;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-45deg);
+    background-color: var(--skin-color);
+    border-radius: 30% 30% 30% 80%;
+
+}
+
+.left-foot {
+    width: 30px;
+    height: 35px;
+    top: 77%;
+    left: 35%;
+    transform: rotate(80deg);
+    background-color: var(--beak-color);
+    border-radius: 50%;
+
+}
+
+.right-foot {
+    width: 30px;
+    height: 35px;
+    top: 77%;
+    right: 35%;
+    transform: rotate(-70deg);
+    background-color: var(--beak-color);
+    border-radius: 50%;
+
+}
+
+.left-face {
+    top: 20%;
+    left: 32%;
+    right: 42%;
+    /*width: 156px;*/
+    height: 100px;
+    background-color: var(--belly-color);
+    border-radius: 70% 70% 60% 60%;
+
+}
+
+.right-face {
+    top: 20%;
+    left: 42%;
+    right: 32%;
+    /*width: 156px;*/
+    height: 100px;
+    background-color: var(--belly-color);
+    border-radius: 70% 70% 60% 60%;
+}
+
+.belly {
+    top: 34%;
+    left: 29.5%;
+    right: 29.5%;
+    /*width: 156px;*/
+    height: 141px;
+    background-color: var(--belly-color);
+    border-radius: 120% 120% 100% 100%;
+}
+
+.left-eye {
+    top: 28%;
+    left: 40%;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.right-eye {
+    top: 28%;
+    right: 40%;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+.left-blush {
+    top: 36%;
+    left: 34%;
+    width: 19px;
+    height: 13px;
+    background-color: var(--blush-color);
+    border-radius: 50%;
+
+}
+.right-blush {
+    top: 36%;
+    right: 34%;
+    width: 19px;
+    height: 13px;
+    background-color: var(--blush-color);
+    border-radius: 50%;
+
+}
+.top-beak {
+    top: 36%;
+    right: 46%;
+    width: 22px;
+    height: 13px;
+    background-color: var(--beak-color);
+    border-radius: 50%;
+
+}
+.bottom-beak {
+    top: 34%;
+    right: 45%;
+    width: 27px;
+    height: 13px;
+    background-color: var(--beak-color);
+    border-radius: 50%;
+
+}
+.sparkle {
+    top: 32%;
+    right: 42%;
+    width: 5px;
+    height: 5px;
+    background-color: white !important;
+    border-radius: 50%;
+
+}
+/*We are selecting all penguin's child elements at once to set their position to absolute. */
+.penguin * {
+    position: absolute;
+/*    border-style: var(--border-line);*/
+}
