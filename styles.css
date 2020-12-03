@@ -3,17 +3,17 @@
     color: black;
     font-family: sans-serif;
     text-align: center;
+    --border-line: solid;
+    --skin-color: #808080;
+    --belly-color: #ffffff;
+    --beak-color: #ffa500;
+    --blush-color: #ffc0cb;
 }
 
 
 
 /*Penguin div's position is set to relative, in order to move the different parts of the penguin's body relatively to the penguin div*/
 .penguin {
-    --border-line: solid;
-    --skin-color: grey;
-    --belly-color: white;
-    --beak-color: orange;
-    --blush-color: pink;
     width: 300px;
     height: 300px;
     position: relative;
@@ -185,4 +185,13 @@
 .penguin * {
     position: absolute;
 /*    border-style: var(--border-line);*/
+}
+
+.editor-panel {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h4{
+    text-transform: uppercase;
 }
